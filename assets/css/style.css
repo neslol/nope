@@ -60,4 +60,201 @@ nav ul li a.link:hover {
 /* Header */
 header {
   background-image: url(/assets/img/topbg.jpg);
+  background-size: cover;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.headerContainer {
+  max-width: 1081px;
+  width: 100%;
+}
+
+.headerContainer h1 {
+  color: #fff;
+  font-size: 80px;
+  line-height: 71px;
+  margin-bottom: 35px;
+}
+
+/* Resume */
+section.resume {
+  min-height: 390px;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+}
+
+section.resume div.resumeContainer {
+  max-width: 1081px;
+  gap: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+div.resumeContainer div.leftSide {
+  max-width: 535px;
+}
+
+div.resumeContainer div.leftSide p {
+  margin-top: 59px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+div.resumeContainer div.rightSide {
+  margin-top: 16px;
+}
+
+/* Attractions */
+section.attractions img {
+  max-width: 540px;
+  min-height: 309px;
+}
+
+section.attractions article {
+  max-width: 540px;
+  min-height: 309px;
+  padding: 62px 55px 62px 54px;
+}
+
+section.attractions p.hashtags {
+  color: #1968f9;
+  font-weight: 600;
+}
+
+section.attractions {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1081px;
+  margin: 0 auto;
+}
+
+/* Info */
+
+section.info h3,
+section.info p {
+  color: #fff;
+}
+
+section.info a {
+  color: #fff;
+  font-weight: 600;
+}
+
+section.info {
+  background-color: #4525f2;
+  display: flex;
+  min-height: 545px;
+  max-width: 100%;
+}
+
+section.info div.infoContainer {
+  max-width: 1081px;
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+  margin: 100px auto 0 auto;
+}
+
+section.info article {
+  max-width: 260px;
+  color: #fff;
+}
+
+/* Formula */
+
+section.formula {
+  min-height: 391px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1081px;
+  margin: 0 auto;
+  gap: 240px;
+}
+
+section.formula div.leftSide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+section.formula div.rightSide {
+  max-width: 539px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin-top: 41px;
+}
+
+input.inputHalf {
+  width: 250px;
+}
+input.inputFull {
+  width: 539px;
+  height: 96px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 39px;
+  row-gap: 38px;
+}
+
+input {
+  background-color: #f2f4f8;
+  padding: 13px 16px 14px 16px;
+  border-radius: 16px;
+  border-width: 0;
+}
+
+button {
+  background-color: #4525f2;
+  padding: 13px 253px 14px 252px;
+  border-radius: 100px;
+  border-width: 0;
+}
+
+/* Footer */
+
+footer {
+  background-color: #4525f2;
+  min-height: 80px;
+}
+
+.footer-content {
+  max-width: 1081px;
+  margin: 0 auto;
+  padding: 0 20px; /* Optional: adds space on small screens */
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
+}
+
+footer ul li {
+  margin-top: 20px;
+}
+
+footer ul li:nth-child(3) {
+  margin-right: auto;
+}
+footer img {
+  height: 40px;
+  width: 40px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 14px;
+  margin-left: auto;
 }

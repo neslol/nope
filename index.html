@@ -25,27 +25,31 @@
     </nav>
     <!-- Overskrift -->
     <header>
-      <h1>Den perfekte Københavnerferie</h1>
+      <div class="headerContainer">
+        <h1>Den perfekte Københavnerferie</h1>
+      </div>
     </header>
     <!-- Kort fortalt -->
     <section class="resume">
-      <div class="leftSide">
-        <p>
-          I dag er København primært internationalt kendt som en gastronomisk
-          destination, mange rejser efter, og hvor det gode liv leves ved
-          vandet, i de små, hyggelige gader og i de ret forskellige kvarterer,
-          der binder byen sammen. Hop på cyklen eller i den nye metroring, og du
-          vil altid være tæt på lækker shopping, kulinariske oplevelser og nogle
-          af Danmarks mest ikoniske kunst- og kulturinstitutioner.
-        </p>
-        <a class="btn" href="index.html">Læs mere</a>
-      </div>
-      <div class="rightSide">
-        <img src="assets/img/wordcloud.jpg" alt="" />
+      <div class="resumeContainer">
+        <div class="leftSide">
+          <p>
+            I dag er København primært internationalt kendt som en gastronomisk
+            destination, mange rejser efter, og hvor det gode liv leves ved
+            vandet, i de små, hyggelige gader og i de ret forskellige kvarterer,
+            der binder byen sammen. Hop på cyklen eller i den nye metroring, og
+            du vil altid være tæt på lækker shopping, kulinariske oplevelser og
+            nogle af Danmarks mest ikoniske kunst- og kulturinstitutioner.
+          </p>
+          <a class="btn" href="index.html">Læs mere</a>
+        </div>
+        <div class="rightSide">
+          <img src="assets/img/wordcloud.png" alt="" />
+        </div>
       </div>
     </section>
-    <!-- Attractions i grid -->
-    <section class="gridAttractions">
+    <!-- Attractions -->
+    <section class="attractions">
       <img src="assets/img/Livgardens-vagtskifte.jpg" alt="" />
       <article>
         <h2>Vagtskifte på Amalienborg</h2>
@@ -55,6 +59,7 @@
           Amalienborg til vagtskifte klokken 12, hvor de afløser deres
           kammerater.
         </p>
+        <br />
         <p class="hashtags">#livgarder #dronningen #danmark</p>
       </article>
       <article>
@@ -64,6 +69,7 @@
           sømandsværtshuse og dertil hørende glædespiger. Men i 1980’erne blev
           området gennemgribende renoveret.
         </p>
+        <br />
         <p class="hashtags">#nyhavn #både #cafeer #værtshuse #barer</p>
       </article>
       <img src="assets/img/nyhavn-district-1119123_1280.jpg" alt="" />
@@ -79,6 +85,7 @@
           slags; kun Dyrehavsbakken er ældre. Tivoli blev grundlagt af Georg
           Carstensen i 1843.
         </p>
+        <br />
         <p class="hashtags">
           #tivoli #forlystelsespark #københavn #grundlagt1843
         </p>
@@ -90,37 +97,48 @@
           smørrebrødsrestauranter dukkede op i København. Det ældste, kendte
           menukort med smørrebrød er fra den fornemme og store restaurant Nimb.
         </p>
+        <br />
         <p class="hashtags">#smørrebrød #delikatesse #dansk #nimb</p>
       </article>
+      <img src="assets/img/15821154512002073911.jpg" alt="Smørrebrød" />
     </section>
     <!-- information -->
     <section class="info">
-      <h3>Oplevelser i KBH</h3>
-      <p>
-        København byder på oplevelser alle vegne. Turisterne i København har
-        masser at opleve, når de kommer til byen for første gang. Derimod kan
-        man som Københavner godt føle, at oplevelserne ikke ligefrem hænger på
-        Københavns træer. Her på siden vil vi dog løbende komme med forslag til
-        oplevelser. Det kan både være oplevelser, som man kan nyde for første
-        gang – men også nogle af de oplevelser, som er gode uanset, hvor mange
-        gange man oplever dem.
-      </p>
-      <img src="assets/img/tivoliindgang.svg" alt="" />
-      <p>
-        Hvis du vil vide, hvad der sker på københavns museer, så kan du navigere
-        over til vores <a href="index.html">museums-site</a>, hvorfra du kan
-        læse alle indlæg, som KUN har med museer at gøre.
-      </p>
-      <h3>Events i KBH</h3>
-      <p>
-        Med “events i København” mener vi, at der ind imellem opstår nogle
-        events rundt omkring i København, hvor alle er velkomne og værterne gør
-        noget ekstra ud af det. Events kan være store eller små. Men fælles for
-        dem alle er at de alle er skabt for at skabe lidt liv i byen og give
-        muligheden for at komme ud og nyde livet sammen med dine venner og ikke
-        mindst med familien. Kender du til andre events så tip os gerne via
-        <a href="index.html">kontakt</a>.
-      </p>
+      <div class="infoContainer">
+        <article>
+          <h3>Oplevelser i KBH</h3>
+          <p>
+            København byder på oplevelser alle vegne. Turisterne i København har
+            masser at opleve, når de kommer til byen for første gang. Derimod
+            kan man som Københavner godt føle, at oplevelserne ikke ligefrem
+            hænger på Københavns træer. Her på siden vil vi dog løbende komme
+            med forslag til oplevelser. Det kan både være oplevelser, som man
+            kan nyde for første gang – men også nogle af de oplevelser, som er
+            gode uanset, hvor mange gange man oplever dem.
+          </p>
+        </article>
+        <article>
+          <img src="assets/img/tivoliindgang.png" alt="" />
+          <p>
+            Hvis du vil vide, hvad der sker på københavns museer, så kan du
+            navigere over til vores <a href="index.html">museums-site</a>,
+            hvorfra du kan læse alle indlæg, som KUN har med museer at gøre.
+          </p>
+        </article>
+        <article>
+          <h3>Events i KBH</h3>
+          <p>
+            Med “events i København” mener vi, at der ind imellem opstår nogle
+            events rundt omkring i København, hvor alle er velkomne og værterne
+            gør noget ekstra ud af det. Events kan være store eller små. Men
+            fælles for dem alle er at de alle er skabt for at skabe lidt liv i
+            byen og give muligheden for at komme ud og nyde livet sammen med
+            dine venner og ikke mindst med familien. Kender du til andre events
+            så tip os gerne via
+            <a href="index.html">kontakt</a>.
+          </p>
+        </article>
+      </div>
     </section>
     <!-- Formula -->
     <section class="formula">
@@ -133,31 +151,53 @@
       <div class="rightSide">
         <h3>Har du spørgsmål?</h3>
         <form action="">
-          <input type="text" name="name" id="name" placeholder="Navn" />
-          <input type="email" name="email" id="email" placeholder="E-mail" />
           <input
+            class="inputHalf"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Navn"
+          />
+          <input
+            class="inputHalf"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+          />
+          <input
+            class="inputFull"
             type="text"
             name="question"
             id="question"
             placeholder="Skriv din besked"
           />
+          <button>Send</button>
         </form>
       </div>
     </section>
     <!-- Footer -->
     <footer>
-      <ul>
-        <li>
-          <a href="index.html"><img src="assets/img/facebook.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href="index.html"><img src="assets/img/instagram.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href="index.html"><img src="assets/img/youtube.svg" alt="" /></a>
-        </li>
-        <li><p>© 2022 Opdag dit København - All Rights Reserved.</p></li>
-      </ul>
+      <div class="footer-content">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img src="assets/img/facebook.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="index.html"
+              ><img src="assets/img/instagram.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="index.html"><img src="assets/img/youtube.svg" alt="" /></a>
+          </li>
+          <li>
+            <p>© 2022 Opdag dit København - All Rights Reserved.</p>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
