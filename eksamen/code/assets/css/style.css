@@ -1,0 +1,502 @@
+/*? Default settings */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+i {
+  font-size: 25px;
+}
+
+/*! Header */
+header {
+  min-height: 630px;
+  background-image: url(/code/assets/img/baggrund.png);
+  background-size: cover;
+  text-align: center;
+}
+
+h1 {
+  font-size: 70px;
+  padding-top: 81px;
+  padding-bottom: 13px;
+  max-width: 822px;
+  margin: 0 auto;
+  line-height: 66px;
+}
+
+header p {
+  font-size: 18px;
+  max-width: 560px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+/*! Navigation */
+nav {
+  max-width: 1080px;
+  display: flex;
+  margin: 0 auto;
+  padding: 44px 10px 0 44px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 75px;
+}
+
+nav img {
+  max-width: 133px;
+  max-height: 44px;
+}
+
+li a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 13px 7px 13px;
+}
+
+nav li a:hover {
+  background-color: #00fdff;
+  color: #003557;
+  border-radius: 15%;
+}
+
+#openMenu {
+  z-index: 1000;
+  display: none;
+  padding: 14px;
+  background-color: #00fdff;
+  border-radius: 15px;
+}
+
+#openMenu:hover {
+  background-color: #07bbbb;
+}
+
+#closeMenu:hover {
+  background-color: #07bbbb;
+}
+
+#closeMenu {
+  z-index: 1000;
+  display: block;
+  padding: 14px;
+  background-color: #00fdff;
+  border-radius: 15px;
+}
+
+/* I added this because I kept experiencing the bug of constantly seeing the openMenu or closeMenu buttons popping up. */
+.hidden {
+  display: none !important;
+}
+
+/*! intro Section */
+section.intro {
+  min-height: 609px;
+}
+
+/* All of the containers in the styling are added because of max width of content */
+.introContainer {
+  padding: 0 25px;
+  max-width: 1080px;
+  color: #000;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 50px;
+  gap: 60px;
+  padding-bottom: 50px;
+}
+
+.introContainer article {
+  max-width: 520px;
+}
+
+.introContainer h2 {
+  font-size: clamp(2rem, 3.1vw, 3rem);
+  padding-top: 80px;
+  padding-bottom: 17px;
+  line-height: 49px;
+}
+
+.introContainer img {
+  max-height: 486px;
+  max-width: 486px;
+}
+
+.introContainer p {
+  padding-bottom: 37px;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.introContainer .btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 30px;
+  background-color: #003557;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #005b94;
+}
+
+/*! Article */
+section.article {
+  background-color: #003557;
+  min-height: 1036px;
+}
+
+.article h2 {
+  font-size: 50px;
+  text-align: center;
+  padding: 70px 0 77px 0;
+}
+
+.articleContainer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 25px;
+  gap: 50px;
+  column-count: 2;
+  padding-bottom: 50px;
+}
+
+.articleContainer p {
+  max-width: 515px;
+  font-size: 18px;
+  padding-bottom: 28px;
+}
+
+/*! Gallery */
+section.gallery {
+  min-height: 1043px;
+  color: #000;
+}
+
+.gallery h2 {
+  text-align: center;
+  font-size: 50px;
+  padding: 73px 0 17px 0;
+}
+
+.gallery p {
+  text-align: center;
+  font-weight: 600;
+  max-width: 846px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+.galleryImages {
+  margin: 0 auto;
+  display: grid;
+  max-width: 1020px;
+  grid-template-columns: 168px 168px 658px;
+  grid-template-rows: repeat(5, 168px);
+  gap: 14px 16px;
+}
+
+.galleryImages img.small {
+  width: 100%;
+}
+
+.galleryImages .large {
+  grid-column: 3 / 4;
+  grid-row: 1 / 5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galleryImages img.small:hover {
+  border: 4px dotted #36a8dd;
+}
+
+.galleryImages .active {
+  border: 4px solid #36a8dd;
+}
+
+/*! Formula */
+section.formula {
+  background-color: #46a4d3;
+  min-height: 674px;
+  color: #000;
+}
+
+.formula h2 {
+  text-align: center;
+  font-size: 50px;
+  padding: 70px 0 22px 0;
+}
+
+.formula p {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 63px;
+  max-width: 666px;
+  margin: 0 auto;
+}
+
+form {
+  padding: 0 10px;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.leftSide,
+.rightSide {
+  flex: 1;
+  max-width: 520px;
+}
+
+.leftSide input {
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 40px;
+}
+
+.leftSide input:last-child {
+  margin-bottom: 0;
+}
+
+#message {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding-top: 13px;
+}
+
+#message,
+input {
+  font-weight: 600;
+  border: 2px solid #191919;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  padding-left: 16px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  min-height: 48px;
+  background-color: #191919;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:focus:valid,
+input[type="submit"]:hover {
+  background-color: #414141;
+}
+
+#message:valid:required,
+#message:focus:valid,
+input:valid:required,
+input:focus:valid {
+  background-color: #5eff5e;
+}
+
+/*! Footer */
+footer {
+  min-height: 275px;
+  background-color: #191919;
+}
+
+.footerContainer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
+}
+
+.footerContainer ul.contact {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-top: 65px;
+  margin-right: auto;
+}
+
+.footerContainer ul.icons {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 44px;
+}
+
+.footerContainer h3 {
+  font-size: 32px;
+  padding-bottom: 25px;
+}
+
+.footerContainer p {
+  line-height: 26px;
+}
+
+.footerContainer i:hover {
+  color: #46a4d3;
+}
+
+.footerContainer i {
+  color: #fff;
+}
+
+/*! Media Queries */
+@media screen and (max-width: 1080px) {
+  .galleryImages {
+    max-width: 800px;
+    grid-template-columns: 170px 170px 436px;
+  }
+
+  section.gallery {
+    padding: 0 25px;
+  }
+
+  nav ul {
+    gap: 45px;
+  }
+}
+
+/* Experienced the bug whenever resized back to 1080px the open or close menu buttons still are visible. */
+@media screen and (min-width: 769px) {
+  /* Burger menu */
+  #openMenu,
+  #closeMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Burger navigation menu */
+  #openMenu,
+  #closeMenu {
+    display: block;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    color: #003557;
+  }
+
+  nav img {
+    max-width: 250px;
+    max-height: 88px;
+  }
+
+  nav a:first-child {
+    margin: 0 auto;
+  }
+
+  li a {
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  nav li a:hover {
+    background-color: #00fdff;
+    color: #003557;
+    border-radius: 15%;
+  }
+
+  nav ul {
+    display: none;
+  }
+  nav.active ul {
+    min-height: 100px;
+    display: flex;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav p {
+    margin: 0 auto;
+  }
+
+  /* Intro Section */
+  .introContainer {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .introContainer p {
+    font-size: 16px;
+  }
+
+  .introContainer img {
+    height: 400px;
+  }
+
+  .introContainer h2 {
+    padding-top: 0;
+    font-size: 50px;
+  }
+
+  /* Formula Section */
+  form {
+    padding-bottom: 50px;
+  }
+
+  section.formula {
+    padding: 0 25px;
+  }
+
+  /* Gallery Section */
+  .galleryImages {
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: repeat(2, 130px);
+    gap: 10px 10px;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .galleryImages .large {
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Footer */
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  .footerContainer ul.contact {
+    margin: 0 auto;
+  }
+
+  .footerContainer ul.icons {
+    padding: 40px 0 90px 0;
+    margin: 0 auto;
+    gap: 25px;
+  }
+}
